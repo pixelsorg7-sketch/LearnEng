@@ -1,0 +1,388 @@
+/* Layout Wrapper */
+.loginrecordslayout {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #6c4d4d;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Sidebar */
+.sidebar {
+  background-color: #cdd4ff;
+  width: 250px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.sidebarlogo {
+  width: 100%;
+  max-width: 160px;
+  margin-bottom: 40px;
+  align-self: center;
+}
+
+.logoutwrapper {
+  margin-top: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.logoutbutton {
+  background-color: #6c4d4d;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main Content */
+.maincontent {
+  flex: 1;
+  padding: 40px;
+ 
+  border-radius: 0 0 0 80px;
+  backdrop-filter: blur(2px);
+}
+
+.topheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.welcometext {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.searchbar {
+  position: relative;
+  width: 250px;
+}
+
+.searchbar input {
+  width: 100%;
+  padding-right: 40px;
+  border-radius: 20px;
+  border: 2px solid #a29fbe;
+  padding: 8px 16px;
+}
+
+.searchicon {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  color: #8b88b1;
+}
+
+.maintitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.tablesection {
+  overflow-x: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modern Styled Table */
+.recordstable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(108, 77, 77, 0.2);
+}
+
+/* Table Head */
+.recordstable th {
+  background: linear-gradient(135deg, #6bc541, #a29fbe);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Table Cells */
+.recordstable td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #631e1e;
+  color: #6c4d4d;
+  font-size: 14px;
+}
+
+/* Row Hover Effect */
+.recordstable tbody tr:hover {
+  background-color: #fdf6e3; /* subtle highlight */
+  transition: background 0.3s ease;
+}
+
+/* Rounded Corners */
+.recordstable th:first-child {
+  border-top-left-radius: 16px;
+}
+.recordstable th:last-child {
+  border-top-right-radius: 16px;
+}
+.recordstable tr:last-child td:first-child {
+  border-bottom-left-radius: 16px;
+}
+.recordstable tr:last-child td:last-child {
+  border-bottom-right-radius: 16px;
+}
+
+/* .paginationcon{
+  display: flex;
+  width: '100%';
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.pagenumbercon{
+  display: flex;
+   column-gap: 20px;
+}
+
+.pagibtn{
+  width: 50px;
+  height: 50px;
+  background-color:green;
+  border-radius: 20px;
+}
+
+.pagitextbtn{
+  color: #ffffff;
+}
+
+.pagipage{
+   width: 50px;
+  height: 50px;
+  background-color:green;
+   border-radius: 20px;
+} */
+
+
+
+ .paginationcon {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          column-gap: 20px;
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+        
+        .pagenumbercon {
+          display: flex;
+          column-gap: 20px;
+          flex-wrap: wrap;
+          gap: 8px;
+          align-items: center;
+        }
+        
+        .pagibtn {
+          width: 80px;
+          height: 50px;
+          background-color: green;
+          border-radius: 20px;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 4px;
+          transition: all 0.3s ease;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .pagibtn:hover:not(:disabled) {
+          background-color: #22c55e;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .pagibtn:active:not(:disabled) {
+          transform: translateY(0);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pagibtn:disabled {
+          background-color: #9ca3af;
+          cursor: not-allowed;
+          opacity: 0.6;
+        }
+        
+        .pagitextbtn {
+          color: #ffffff;
+          font-size: 12px;
+          font-weight: 600;
+          margin: 0;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+        
+        .pagipage {
+          width: 50px;
+          height: 50px;
+          background-color: green;
+          border-radius: 20px;
+          border: 2px solid transparent;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          color: white;
+          transition: all 0.3s ease;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .pagipage:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+      .pagipageclicked {
+          background-color: #3b82f6;
+          border-color: #1d4ed8;
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+          width: 50px;
+          height: 50px;
+          border-radius: 20px;
+          border: 2px solid transparent;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          color: white;
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .pagipage.dots {
+          background-color: transparent;
+          cursor: default;
+          color: #6b7280;
+          font-weight: bold;
+          box-shadow: none;
+        }
+        
+        .pagipage.dots:hover {
+          transform: none;
+          box-shadow: none;
+        }
+
+        @media (max-width: 640px) {
+          .paginationcon {
+            flex-direction: column;
+            gap: 16px;
+          }
+          
+          .pagenumbercon {
+            justify-content: center;
+            gap: 6px;
+            column-gap: 12px;
+          }
+          
+          .pagibtn, .pagipage {
+            width: 45px;
+            height: 45px;
+          }
+          
+          .pagitextbtn {
+            font-size: 10px;
+          }
+          
+          .page-info {
+            font-size: 16px;
+            padding: 10px 16px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .pagenumbercon {
+            gap: 4px;
+            column-gap: 8px;
+          }
+          
+          .pagibtn, .pagipage {
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+          }
+        }
+
+/* .tablesection {
+  overflow-x: auto;
+}
+
+.recordstable {
+  width: 100%;
+  background-color: #f3fdb0;
+  border-collapse: collapse;
+  color: #6c4d4d;
+}
+
+.recordstable th,
+.recordstable td {
+  border: 2px solid #6c4d4d;
+  padding: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.recordstable th {
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #f3fdb0;
+} */
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .topheader {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .searchbar {
+    width: 100%;
+  }
+
+  .maincontent {
+    padding: 20px;
+  }
+}

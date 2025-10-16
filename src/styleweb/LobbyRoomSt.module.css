@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.LobContainer{
+
+
+   
+    
+    min-width: none;
+    min-height: 150vh;
+    margin:0;
+    padding:0;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://i.imgflip.com/727smp.jpg');
+
+}
+
+.LobHeader{
+    width:100%;
+    height: 90px;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    background-color:#71b1ff;
+    z-index: 100;
+} 
+
+/* .homemeaderdark{
+    background-color: black;
+
+} */
+.LobHeader .Logoname{
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #70072a, #1246a0); 
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+/* .homeHeader .Logonamedark{
+    background:linear-gradient(to right, red, blue);
+} */
+
+.LobHeader img{
+
+    width:40px;
+    height: 40px;
+
+}
+
+.LobHeader ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.LobHeader li{
+    height: 50px;
+    display: flex;
+}
+
+
+.LobHeader a{
+    height: 100%;
+    padding: 0 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--headertext-color);
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+
+.LobHeader a:hover{
+     /* background-color: #f0f0f0; */
+     text-decoration-line: underline;
+     font-weight: 600;
+     color: #1a237e; 
+}
+
+.LobHeader li:first-child{
+    margin-right: auto;
+}
+
+.LobHeader .sidebarHide{
+ 
+   /* display: none;     */
+   position: fixed;
+   top:0;
+   left: 3000px;
+   height: 100vh;
+   width:70%;
+   max-width: 300px;
+   z-index:999;
+   background-color: rgba(255, 255, 255, 0.95);
+   backdrop-filter: blur(10px);
+   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+   transition:  0.3s ease-in-out; 
+   /* transform: translateX(0); */
+   /* display: flex; */
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   
+}
+
+.LobHeader .sidebarShow{
+    position: fixed;
+    top:0;
+    left: 31%;
+    height: 100vh;
+    width:70%;
+    max-width: 300px;
+    z-index:999;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    transition:  0.3s ease-in-out; 
+    /* transform: translateX(0); */
+    /* display: flex; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.LobHeader .sidebarShow li{
+    width: 100%;
+}
+
+.LobHeader .sidebarShow a{
+    width: 100%;
+}
+
+.LobHeader .navbtn{
+    display: none;
+}
+
+/* questionprojcon */
+
+.quessearchcon{
+    width: 100%;
+    height: 150px;
+    border: 3px solid black;
+    align-items: center;
+    align-content: center;
+    padding-left: 35%;
+}
+
+.quessearchcon input{
+    width: 40%;
+    height: 50px;
+    
+}
+
+/*form des*/
+
+.quesformcon{
+
+    width: 100%;
+    height: 700px;
+    background-color: #4172BD;
+    padding-top: 20px;
+
+}
+
+.createformcon{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    align-content: center;
+}
+
+.createform{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    align-content: center;
+}
+
+
+
+@media(max-width:730px){ /*mobile devices*/
+ 
+    .quessearchcon{
+        
+        padding-left: 15%;
+    }
+
+    .quessearchcon input{
+        width: 90%;
+        
+    }
+    
+ 
+
+  
+    .LobHeader .hideonMobile{
+        display: none;
+    }
+
+    .LobHeader .navbtn{
+        display: block;
+    }
+
+    
+
+}

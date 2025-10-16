@@ -1,0 +1,517 @@
+.HostPlayroomContainer {
+  background-image: url('../assets/bghostplayroom.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3a6838;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.learnengLogo {
+  width: 150px;
+  height: 60px;
+  background-image: url('../assets/LearnENGWG.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcomeSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.welcomeText {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.profileIcon {
+  font-size: 24px;
+  color: white;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px 30px 20px; 
+   margin: 1.0rem 1rem;
+  
+  align-items: center;
+   /* z-index: 300; */
+   /* border: 1px solid black; */
+    position: static; /* Reset positioning */
+ column-gap: 190px;
+  clear: both;
+}
+
+
+.backButton {
+  padding: 10px 25px;
+  background-color: #60a05f;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #ebf094;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #4f874f;
+}
+
+.linegap{
+  height: 4px;        /* thickness */
+  border: none;       /* remove default border */
+  background: #355E3B;   /* color */
+  margin: 1.5rem 0;
+}
+/* --- Main Content Box --- */
+.menuBox {
+  margin: 20px auto;
+  width: 85%;
+  max-width: 1200px;
+  height: 550px;
+  /* overflow-y: auto; */
+  background-color: rgba(226, 244, 210, 0.9); /* Adjusted color to match image */
+  border-radius: 25px;
+  border: 2px solid #5d8c5b; /* Adjusted color to match image */
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Styles for Header inside Menu Box --- */
+.menuBoxheader {
+  display: flex;
+  border-bottom: 3px solid green;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.createPlayroomButton {
+  background-color: #ffefb8;
+  border: 2px solid #b67d12;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #b67d12;  
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+
+.createPlayroomButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.legendtitle {
+  font-weight: 600;
+  color: #444;
+}
+
+.legenditem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* --- Styles for the Color Dots --- */
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dot.green { background-color:rgb(88, 156, 32); }
+.dot.orange { background-color: #f0ad4e; }
+.dot.purple { background-color: #5d4b85; }
+
+
+/* --- Styles for the Playroom Grid and Cards --- */
+.playroomGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  height: 370px;
+  padding: 20px;
+  overflow-y: auto;
+  border: 3px solid green;
+  background-color: #fff3bd;
+  gap: 25px;
+}
+
+.playroomCard {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px 20px;
+  border: 2px solid #b67d12;
+  color: #b67d12;
+  transition: transform 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.playroomCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.playroomCarddots {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.playroomName {
+ color: #b67d12;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* header */
+
+.header{
+  background:var(--green-700);
+  color:#fff;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.logo{  height:60px;}
+
+.logofooter{
+  height: 80px;
+  width: 300px;
+}
+
+
+/* user dropdown (support both class name variants from earlier code) */
+.userWrap, .userDropdown{ position:relative; display:flex; align-items:center; }
+.userBtn, .userToggle{
+  display:flex; align-items:center; gap:12px;
+  background:none; border:none; color:#fff;
+  font-weight:600; font-size:18px; cursor:pointer;
+}
+.welcome, .welcomeText{ white-space:nowrap; }
+.userPic, .userIcon{ width:36px; height:36px; border-radius:50%; object-fit:cover; }
+
+/* dropdown panel */
+.menu, .dropdownCustom{
+  position:absolute; right:0; top:calc(100% + 8px);
+  background:#fff; color:#333; border-radius:10px; box-shadow:var(--shadow);
+  min-width:180px; overflow:hidden; z-index:10;
+}
+.menuItem, .dropdownItem{
+  width:100%; padding:10px 14px; background:none; border:none; text-align:left;
+  font-weight:500; cursor:pointer; font-size:16px;
+}
+.menuItem:hover, .dropdownItem:hover{ background:#f2f4f2; }
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .menuBoxheader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .playroomGrid {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+  }
+
+  .menuBox {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/* //footer */
+
+.footer {
+  background: linear-gradient(to top, #355E3B, #4F7942);
+  color: #fff;
+  margin-top: auto;
+  border-top: 3px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+}
+
+.footerContent {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 48px 20px 14px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Main Footer Content */
+.footerMain {
+  display: flex;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  /* gap: 400px; */
+  column-gap: 280px;
+  margin-bottom: 32px;
+}
+
+.footerBrand {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.endlogo{
+  height:190px;
+  width: 200px;
+}
+
+.brandTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(45deg, #fff, rgba(255,255,255,0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brandTagline {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 250px;
+}
+
+
+
+.infoFooter{
+  display: flex;
+  flex-direction: column;
+ row-gap: 70px;
+}
+
+.infoFooter a{
+ font-size: 30px;
+ font-weight: bold;
+}
+
+
+.infoFooter p{
+ font-size: 20px;
+ font-weight: bold;
+}
+
+.footerinfoCon{
+  display: flex;
+  column-gap: 59%;
+
+}
+
+.footerquicklinkCon{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4%;
+justify-content: center;
+
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+    width: 120%;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+.sectionTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  padding-bottom: 6px;
+}
+
+
+
+.footerLink {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.85);
+  font-size: 19px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 8px 0;
+  text-align: left;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  position: relative;
+}
+
+.footerLink:hover {
+  color: #fff;
+  padding-left: 8px;
+  background: rgba(255,255,255,0.1);
+  transform: translateX(4px);
+}
+
+.footerLink::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 2px;
+  background: rgba(255,255,255,0.6);
+  transition: width 0.3s ease;
+  transform: translateY(-50%);
+}
+
+.footerLink:hover::before {
+  width: 4px;
+}
+
+/* Divider */
+.footerDivider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+  margin: 24px 0;
+}
+
+/* Bottom Section */
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerCopyright {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footerCopyright p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.madeWith {
+  font-size: 13px !important;
+  opacity: 0.7 !important;
+  font-style: italic;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.socialLink {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  backdrop-filter: blur(10px);
+}
+
+.socialLink:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.4);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.socialLink:active {
+  transform: translateY(0) scale(0.98);
+}
+
+  .customloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.customloader::before,
+.customloader::after,
+.customloader div {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ffc107; /* yellow theme */
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.customloader div {
+  animation-delay: 0.2s;
+}
+
+.customloader::after {
+  animation-delay: 0.4s;
+}

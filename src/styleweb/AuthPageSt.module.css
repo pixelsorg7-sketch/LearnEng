@@ -1,0 +1,99 @@
+.verificationwrapper {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verificationbox {
+  background-color: #467845;
+  padding: 40px;
+  border-radius: 8px;
+  width: 500px;
+  text-align: center;
+}
+
+.verificationtitle {
+  color: #b7dda7;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.verificationcontent {
+  background-color: #e7ffdd;
+  padding: 30px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.textbody {
+  color: #4e3837;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.emaildisplay {
+  color: #4e3837;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.textbold {
+  color: #4e3837;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.codeinput {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #4e3837;
+  border-radius: 5px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resendtext {
+  color: #4e3837;
+  font-size: 0.9rem;
+}
+
+.resendlink {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+ .customloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.customloader::before,
+.customloader::after,
+.customloader div {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ffc107; /* yellow theme */
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.customloader div {
+  animation-delay: 0.2s;
+}
+
+.customloader::after {
+  animation-delay: 0.4s;
+}

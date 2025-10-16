@@ -1,0 +1,326 @@
+.ViewHostroomContainer {
+  background-image: url('../assets/bghostplayroom.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3a6838;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.learnengLogo {
+  width: 150px;
+  height: 60px;
+  background-image: url('../assets/LearnENGWG.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcomeSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.welcomeText {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.profileIcon {
+  font-size: 24px;
+  color: white;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 30px 10px;
+}
+
+.backButton {
+  padding: 10px 25px;
+  background-color: #60a05f;
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  border: 2px solid #ebf094;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #4f874f;
+}
+
+.playroomBox {
+  background-color: #e0ffcacc;
+  border: 3px solid #4c8158;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 25px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.playroomTitle {
+  font-size: 28px;
+  color: #b67d12;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.controlsRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.dateTimeInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeInputs input,
+.timeInputs select {
+  padding: 8px 12px;
+  border: 2px solid #cbb148;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 70px;
+  text-align: center;
+}
+
+.dateInput {
+  padding: 8px 12px;
+  border: 2px solid #cbb148;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 190px;
+  text-align: left;
+}
+
+.timeInputs {
+  display: flex;
+  gap: 10px;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminateBtn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #fbe7a3;
+  color: #b8541b;
+  border: 2px solid #cbb148;
+}
+
+.editdBtn,
+.edittBtn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #fff4b3;
+  color: #6b580b;
+  border: 2px solid #cbb148;
+}
+
+.editdBtn {
+  margin-left: 50px;
+}
+
+.joinedTitle {
+  color: #a16a00;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.studentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.studentButton {
+  background-color: #fff4b3;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #9a6c0c;
+  border: 2px solid #cbb148;
+}
+
+.header{
+  background:var(--green-700);
+  color:#fff;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 28px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.logo{  height:60px; }
+
+/* user dropdown (support both class name variants from earlier code) */
+.userWrap, .userDropdown{ position:relative; display:flex; align-items:center; }
+.userBtn, .userToggle{
+  display:flex; align-items:center; gap:12px;
+  background:none; border:none; color:#fff;
+  font-weight:600; font-size:18px; cursor:pointer;
+}
+.welcome, .welcomeText{ white-space:nowrap; }
+.userPic, .userIcon{ width:36px; height:36px; border-radius:50%; object-fit:cover; }
+
+/* dropdown panel */
+.menu, .dropdownCustom{
+  position:absolute; right:0; top:calc(100% + 8px);
+  background:#fff; color:#333; border-radius:10px; box-shadow:var(--shadow);
+  min-width:180px; overflow:hidden; z-index:10;
+}
+.menuItem, .dropdownItem{
+  width:100%; padding:10px 14px; background:none; border:none; text-align:left;
+  font-weight:500; cursor:pointer; font-size:16px;
+}
+.menuItem:hover, .dropdownItem:hover{ background:#f2f4f2; }
+
+
+.customloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.customloader::before,
+.customloader::after,
+.customloader div {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ffc107; /* yellow theme */
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.customloader div {
+  animation-delay: 0.2s;
+}
+
+.customloader::after {
+  animation-delay: 0.4s;
+}
+/* =======================
+   ✅ RESPONSIVE QUERIES
+   ======================= */
+@media (max-width: 1024px) {
+  .playroomBox {
+    padding: 20px;
+  }
+
+  .controlsRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actionButtons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .editdBtn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .welcomeText {
+    font-size: 14px;
+  }
+
+  .playroomTitle {
+    font-size: 24px;
+  }
+
+  .dateInput {
+    width: 100%;
+  }
+
+  .timeInputs input,
+  .timeInputs select {
+    width: 60px;
+  }
+
+  .editdBtn,
+  .edittBtn,
+  .terminateBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .buttonRow {
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .studentGrid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+
+  .timeInputs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

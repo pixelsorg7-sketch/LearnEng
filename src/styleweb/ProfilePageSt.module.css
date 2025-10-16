@@ -1,0 +1,346 @@
+.editwrapper {
+  min-height: 100vh;
+  background-image: url('../assets/Edit_Profile_BG.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER */
+.headerbar {
+  background-color: #467845;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.logo {
+  height: 100px;
+  /* transform: scale(3);
+  transform-origin: left center; */
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+}
+
+.welcometext {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.usericon {
+  width: 28px;
+  height: 28px;
+}
+
+/* PROFILE CARD */
+.profilecard {
+  background-color: #e7ffdd;
+  width: 320px;
+  padding: 2.5rem 2rem;
+  margin: 60px auto;
+  border-radius: 25px;
+  border: 3px solid #467845;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Close Button */
+.closebtn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #467845;
+  cursor: pointer;
+}
+
+/* Avatar */
+.profileavatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Name & Role */
+.teachername {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4e3837;
+  margin: 0.3rem 0 0.1rem;
+}
+
+.teacherrole {
+  font-size: 13px;
+  color: #4e3837;
+  margin-bottom: 0.8rem;
+}
+
+/* Contact Icons (BIG UPGRADE) */
+.contacticons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 18px;
+  margin-bottom: 1.5rem;
+}
+
+.contacticonimg {
+  width: 45px;   /* CHONKY size like in your reference */
+  height: 45px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.contacticonimg:hover {
+  transform: scale(1.15);
+}
+
+/* Edit Button */
+.editbtn {
+  background-color: #7ad478;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+/* Delete Section */
+.deletesection {
+  background-color: #467845;
+  color: white;
+  padding: 20px 10px 30px;
+  border-radius: 0 0 25px 25px;
+  margin: -20px -2rem -2.5rem;
+}
+
+.deletesection p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.deletebtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Delete Button Glow Up */
+.deleteiconimg {
+  width: 38px;   /* ✨ Beefier button */
+  height: 38px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.deleteiconimg:hover {
+  transform: scale(1.15);
+}
+
+
+
+/* *{
+    margin:0;
+    padding:0;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.ProfContainer{
+
+    width: 100%;
+    height: 100vh;
+     background-image: url('https://i.imgflip.com/727smp.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ProfProfBox{
+    background: linear-gradient(to right, rgb(1, 127, 245), rgb(11, 125, 179));;
+    text-align: center;
+    padding: 40px 90px;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+}
+
+.profmenuicon{
+    width: 25px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+
+.profsettingicon{
+    width: 25px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.profproficon{
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 6px;
+}
+
+.profprofilebottom{
+    background: #fff;
+    color:#999;
+    padding: 60px 0;
+    margin-right: -90px;
+    margin-left: -90px;
+    margin-bottom: -40px;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+.profprofilebottom .arrow{
+    width: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.ProfProfBox button{
+    background: #fff;
+    color: blue;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(244,67,54,0.5);
+    padding: 15px 60px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: -50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.ProfProfBox h3{
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.ProfProfBox .namecard{
+   color: white;
+   font-weight: 700;
+}
+
+.profsocial .logosocial{
+    margin: 30px 5px;
+    cursor: pointer;
+} */
+ .profimageedit{
+  column-gap: 90px;
+ }
+
+.profeditpanel{
+    position: fixed;
+    width: 90%;                 /* responsive width */
+    max-width: 400px;           /* never bigger than 400px */
+    height: auto;               /* let it grow with content */
+    max-height: 85%;            /* still keep it from going off screen */
+    border-radius: 20px;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%); /* center horizontally */
+    border: 3px solid green;
+    background-color: #dff6d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;           /* scroll if too tall */
+    padding: 20px;
+}
+
+/* Heading styles */
+.profeditpanel .profedittext h3 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Input styles */
+.profeditpanel .profedittext input {
+    width: 100%;
+    max-width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: green;
+    margin-top: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+.profeditpanel button {
+    margin: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #467845;
+    box-shadow: 0 5px 10px rgba(26, 26, 26, 0.5);
+    border: 2px solid #dff6d9;
+    border-radius: 20px;
+}
+
+.header{
+  background:var(--green-700);
+  color:#fff;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 28px;
+}
+.logo{  height:60px; }
+
+/* user dropdown (support both class name variants from earlier code) */
+.userWrap, .userDropdown{ position:relative; display:flex; align-items:center; }
+.userBtn, .userToggle{
+  display:flex; align-items:center; gap:12px;
+  background:none; border:none; color:#fff;
+  font-weight:600; font-size:18px; cursor:pointer;
+}
+.welcome, .welcomeText{ white-space:nowrap; }
+.userPic, .userIcon{ width:36px; height:36px; border-radius:50%; object-fit:cover; }
+
+/* dropdown panel */
+.menu, .dropdownCustom{
+  position:absolute; right:0; top:calc(100% + 8px);
+  background:#fff; color:#333; border-radius:10px; box-shadow:var(--shadow);
+  min-width:180px; overflow:hidden; z-index:10;
+}
+.menuItem, .dropdownItem{
+  width:100%; padding:10px 14px; background:none; border:none; text-align:left;
+  font-weight:500; cursor:pointer; font-size:16px;
+}
+.menuItem:hover, .dropdownItem:hover{ background:#f2f4f2; }

@@ -1,0 +1,529 @@
+.CreateHostPlayroomContainer {
+  background-image: url('../assets/bghostplayroom.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3a6838;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.learnengLogo {
+  width: 150px;
+  height: 60px;
+  background-image: url('../assets/LearnENGWG.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcomeSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.welcomeText {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.profileIcon {
+  font-size: 24px;
+  color: white;
+}
+
+.buttonRow {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  padding: 20px 30px 10px;
+}
+
+.backButton {
+  padding: 10px 25px;
+  background-color: #60a05f;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #ebf094;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #4f874f;
+}
+
+.mainContentBox {
+    background-color: #e0ffcacc;
+    border: 3px solid #4c8158;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+/* Game Setup Section (top part with assessments, time, code) */
+.gameSetupSection {
+    display: grid;
+    grid-template-columns: 1.1fr 1.5fr;
+    gap: 40px;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #4c8158;
+}
+
+.gameAssessments {
+    /* No specific changes needed here */
+}
+
+.gameAssessments h3 {
+    color: #3a6838;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 1.1em;
+}
+
+.checkboxGroup input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #60a05f;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    flex-shrink: 0;
+}
+
+.checkboxGroup input[type="checkbox"]:checked {
+    background-color: #60a05f;
+    border-color: #60a05f;
+}
+
+.checkboxGroup input[type="checkbox"]:checked::after {
+    content: '\25CF';
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gameDot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.dotblue { background-color: #4CAF50; }
+.dotorange { background-color: #FFC107; }
+.dotpurple { background-color: #9C27B0; }
+
+
+.timeDateCodeSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 5px;
+}
+
+.timeDateCodeSection .inputRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.inputRow label {
+    font-weight: 600;
+    color: #3a6838;
+    width: 130px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.timeInputGroup,
+.dateInputGroup {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.timeInput,
+.dateInput,
+.gameCodeInput {
+    padding: 8px 12px;
+    border: 2px solid #a0c98f;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #3a6838;
+    background-color: #f7e099;
+    text-align: center;
+    max-width: unset;
+    box-sizing: border-box; /* Crucial for consistent sizing */
+}
+
+.smallInput {
+    width: 70px;
+}
+.extraSmallInput {
+    width: 85px;
+    background-color: #fce8a6;
+    border: 2px solid #b67d12;
+    font-weight: bold;
+    color: #b67d12;
+}
+
+.dateInput {
+    width: 120px;
+    text-align: left;
+}
+
+/* Game Code Input specific styling */
+.gameCodeInput {
+    flex-grow: 1; /* Allows it to take available space */
+    min-width: 100px; /* Adjusted min-width for better behavior when side-by-side */
+    max-width: 150px; /* Adjusted max-width to allow button to fit */
+    text-align: left; /* Align text to left, more common for code fields */
+}
+
+
+.timeArrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.8;
+    font-size: 0.8em;
+    color: #3a6838;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.calendarIcon {
+    color: #3a6838;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* NEW STYLES FOR GAME CODE ROW */
+.gameCodeInputButtonRow {
+    /* This rule now contains the gameCodeInput and generateCodeButton */
+    /* It already has display: flex, align-items: center, gap: 10px from .inputRow */
+    justify-content: flex-start; /* Ensure items start from left after label */
+}
+
+.generateCodeButton {
+    padding: 10px 20px;
+    background-color: #ffefb8;
+    color: #b67d12;
+    border: 2px solid #b67d12;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    /* Remove previous margin-left and align-self as it's now part of a flex row */
+    margin-left: 0;
+    align-self: auto;
+    /* Add a small margin to separate from the input */
+    margin-left: 10px; /* Space between input and button */
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.generateCodeButton:hover {
+    background-color: #f3d970;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Select Game Sets Section */
+.selectGameSetsTitle {
+    color: #3a6838;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.gameSetList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    height: 200px;
+    border: 3px solid green;
+    background-color: #fff3bd;
+    padding: 10px;
+    overflow-y: auto;
+    width: 100%;
+    justify-items: center;
+}
+
+.setCardview {
+    background-color: white;
+    border: 2px solid #b67d12;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 180px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #3a6838;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.setCardview:hover {
+    transform: scale(1.05);
+}
+
+.setCardview .gameDot {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* header new */
+.header{
+  background:var(--green-700);
+  color:#fff;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 28px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.logo{  height:60px;}
+
+/* user dropdown (support both class name variants from earlier code) */
+.userWrap, .userDropdown{ position:relative; display:flex; align-items:center; }
+.userBtn, .userToggle{
+  display:flex; align-items:center; gap:12px;
+  background:none; border:none; color:#fff;
+  font-weight:600; font-size:18px; cursor:pointer;
+}
+.welcome, .welcomeText{ white-space:nowrap; }
+.userPic, .userIcon{ width:36px; height:36px; border-radius:50%; object-fit:cover; }
+
+/* dropdown panel */
+.menu, .dropdownCustom{
+  position:absolute; right:0; top:calc(100% + 8px);
+  background:#fff; color:#333; border-radius:10px; box-shadow:var(--shadow);
+  min-width:180px; overflow:hidden; z-index:10;
+}
+.menuItem, .dropdownItem{
+  width:100%; padding:10px 14px; background:none; border:none; text-align:left;
+  font-weight:500; cursor:pointer; font-size:16px;
+}
+.menuItem:hover, .dropdownItem:hover{ background:#f2f4f2; }
+
+.filterCheckcon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 50px;
+    /* border: 1px solid black; */
+}
+
+.filterCheckcon label{
+   font-size:20px;
+   font-weight: 600;
+   color: #3a6838;
+}
+
+.filterCheckcon input[type="checkbox"]{
+ appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #60a05f;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.filterCheckcon input[type="checkbox"]:checked{
+background-color: #60a05f;
+    border-color: #60a05f;
+}
+.filterCheckcon input[type="checkbox"]:checked::after{
+content: '✔';
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .mainContentBox {
+        padding: 30px;
+        margin: 20px auto;
+    }
+    .gameSetupSection {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .inputRow label {
+        min-width: unset;
+        width: 100%;
+        text-align: left;
+    }
+    .timeDateCodeSection .inputRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .timeInput, .dateInput, .gameCodeInput {
+        width: 100%;
+        max-width: unset;
+    }
+    .timeInputGroup, .dateInputGroup {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .smallInput, .extraSmallInput {
+        width: auto;
+        max-width: 60px;
+    }
+    /* Specific adjustment for the game code row when stacked */
+    .gameCodeInputButtonRow {
+        flex-direction: column; /* Stack input and button */
+        align-items: flex-start; /* Align left */
+        gap: 10px; /* Space between stacked items */
+    }
+    .gameCodeInput {
+        width: 100%; /* Make input stretch */
+        max-width: unset; /* Remove max-width constraint */
+    }
+    .generateCodeButton {
+        align-self: stretch; /* Stretch button when stacked */
+        margin-left: 0; /* Remove specific margin when stacked */
+    }
+    .gameSetList {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .topBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .welcomeSection {
+        margin-top: 10px;
+    }
+    .ViewHostroomContainer {
+        padding-top: 100px;
+    }
+    .mainContentBox {
+        padding: 20px;
+        margin: 15px auto;
+    }
+    .gameAssessments h3, .selectGameSetsTitle {
+        font-size: 1.3em;
+    }
+    .checkboxGroup {
+        font-size: 1em;
+    }
+    .timeInput, .dateInput, .gameCodeInput, .generateCodeButton {
+        font-size: 0.95em;
+        padding: 6px 10px;
+    }
+    .setCardview {
+        min-width: unset;
+        width: 90%;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ViewHostroomContainer {
+        padding-top: 90px;
+    }
+    .topBar {
+        padding: 8px 15px;
+    }
+    .learnengLogo {
+        width: 120px;
+        height: 50px;
+    }
+    .welcomeSection {
+        font-size: 14px;
+        gap: 10px;
+    }
+    .profileIcon {
+        font-size: 20px;
+    }
+    .buttonRow {
+        padding: 10px 15px;
+    }
+    .backButton {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    .mainContentBox {
+        padding: 15px;
+    }
+    .gameAssessments h3, .selectGameSetsTitle {
+        font-size: 1.1em;
+    }
+    .checkboxGroup {
+        font-size: 0.9em;
+    }
+    .timeInput, .dateInput, .gameCodeInput, .generateCodeButton {
+        font-size: 0.85em;
+        padding: 5px 8px;
+    }
+    .setCardview {
+        height: 60px;
+        font-size: 0.9em;
+    }
+}

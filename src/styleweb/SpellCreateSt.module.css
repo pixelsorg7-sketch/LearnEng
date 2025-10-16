@@ -1,0 +1,467 @@
+:root{
+  --green-900:#2a6a43;
+  --green-700:#4c774c;
+  --mint:#dff6d9;
+  --yellow-50:#fff3bd;
+  --white:#ffffff;
+  --shadow:0 10px 28px rgba(0,0,0,.08);
+  --radius-xl:22px;
+  --radius-lg:16px;
+}
+
+/* wallpaper */
+.fbBg{
+  min-height:100vh;
+  background-size:cover;
+  background-position:center;
+  padding:0px;
+  font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* header */
+.fbHeader{
+  height:72px;
+  background:var(--green-700);
+  color:#fff;
+  border-radius:12px;
+  padding:0 20px;
+  margin-bottom:16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.fbHeader span { font-size:20px; }
+.fbLogo{ height:200px; }
+.fbUser{ width:48px; height:48px; border-radius:50%; object-fit:cover; }
+
+/* back */
+.fbBackWrap{ margin:0 8px 16px 8px; }
+.fbBack{
+  background:rgba(76,119,76,1);
+  color:#fff;
+    z-index: 1;
+  position: relative;
+  top:15px;
+  left:20px;
+  border:2px solid #69a569;
+  padding:10px 22px;
+  border-radius:999px;
+  font-weight:600;
+  position: relative;
+  transition:transform .15s ease, background .2s ease;
+}
+.fbBack:hover{ transform:translateY(-1px); background:rgba(76,119,76,.35); }
+
+/* outer panel */
+.fbOuter{
+  background:var(--mint);
+  border:3px solid var(--green-900);
+  border-radius:var(--radius-xl);
+  padding:26px;
+  max-width:980px;
+  margin:auto;
+  box-shadow:var(--shadow);
+}
+.fbTitle{
+  text-align:center;
+  color:#7b4e4b;
+  font-weight:800;
+  margin-bottom:16px;
+}
+.fbTitle span{ font-weight:800; }
+
+/* inner */
+.fbInner{
+  background:var(--yellow-50);
+  border:3px solid #3f6a42;
+  border-radius:var(--radius-lg);
+  padding:18px;
+}
+
+.fbListScroll{
+  max-height:340px;
+  overflow-y:auto;
+  padding-right:6px;
+}
+.fbListScroll::-webkit-scrollbar{ width:8px; }
+.fbListScroll::-webkit-scrollbar-track{ background:transparent; }
+.fbListScroll::-webkit-scrollbar-thumb{
+  background-color:rgba(0,0,0,.2);
+  border-radius:10px;
+}
+
+/* row */
+.fbRow{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:10px 6px;
+  position:relative;
+}
+
+.fbRowMain{
+  flex:1;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:var(--white);
+  border:none;
+  text-align:left;
+  padding:16px 18px;
+  border-radius:14px;
+  outline:2px solid #ffe98e;
+  cursor:pointer;
+}
+.fbRowName{
+  font-weight:600;
+  color:#333;
+}
+
+/* right-side buttons */
+.fbBubbleBtn{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:none;
+  background:#e6f3e6;
+  display:grid;
+  place-items:center;
+  outline:2px solid #cfe3cf;
+  cursor:pointer;
+}
+.fbBubbleBtn:hover{ background:#d8edd8; }
+
+.fbGrip{
+  width:40px;
+  height:40px;
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  background:#eff7ef;
+  outline:2px solid #d9ead9;
+  user-select:none;
+}
+
+/* dropdown */
+.fbMenu{
+  position:absolute;
+  right:94px; /* sits left of the grip */
+  top:50%;
+  transform:translateY(-50%);
+  background:#fff;
+  border:1px solid #d9dfd9;
+  border-radius:10px;
+  min-width:150px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  overflow:hidden;
+  z-index:5;
+}
+.fbMenu button{
+  width:100%;
+  background:none;
+  border:none;
+  text-align:left;
+  padding:10px 12px;
+  font-size:14px;
+  color:#333;
+  cursor:pointer;
+}
+.fbMenu button:hover{ background:#f5f7f5; }
+.danger{ color:#ab2c2c; font-weight:600; }
+
+/* create */
+.fbCreate{
+  margin-top:14px;
+  background:#2f6f3e !important;
+  border:none !important;
+  padding:10px 16px !important;
+  border-radius:12px !important;
+  font-weight:700 !important;
+  color:#fff !important;
+}
+.fbCreate:hover{ background:#2a6237 !important; }
+
+/* right-side single gear */
+.fbGearBtn{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:none;
+  background:#e6f3e6;
+  display:grid;
+  place-items:center;
+  outline:2px solid #cfe3cf;
+  cursor:pointer;
+}
+.fbGearBtn:hover{ background:#d8edd8; }
+
+/* dropdown positioned next to the gear */
+.fbMenu{
+  position:absolute;
+  right:52px; /* sits to the left of the gear */
+  top:50%;
+  transform:translateY(-50%);
+  background:#fff;
+  border:1px solid #d9dfd9;
+  border-radius:10px;
+  min-width:150px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  overflow:hidden;
+  z-index:5;
+}
+.fbMenu button{
+  width:100%;
+  background:none;
+  border:none;
+  text-align:left;
+  padding:10px 12px;
+  font-size:14px;
+  color:#333;
+  cursor:pointer;
+}
+.fbMenu button:hover{ background:#f5f7f5; }
+.danger{ color:#ab2c2c; font-weight:600; }
+
+/* Make the edit modal wider */
+.bigModal {
+  max-width: 860px !important;
+}
+
+/* Edit card inside modal */
+.editCard{
+  background:rgba(231,255,221,.92);
+  border:3px solid var(--green-900);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  padding:18px 18px 20px;
+}
+
+.viewImagecard{
+  background:rgba(176, 248, 146, 0.92);
+  border:3px solid var(--green-900);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  padding:18px 18px 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header */
+.editHead{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 10px 16px;
+}
+.editHead h4{
+  margin:0;
+  color:#5b3d3b;
+  font-weight:900;
+  text-align:center;
+}
+.closeRound{
+  position:absolute;
+  left:10px;
+  top:6px;
+  width:32px; height:32px;
+  border-radius:18px;
+  border:2px solid #dfead1;
+  background:#f6fff0;
+  cursor:pointer;
+  font-size:18px;
+  line-height:1;
+}
+
+/* Grid like your mock */
+.editGrid{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:18px 26px;
+  padding:0 6px;
+}
+.rightCol{ display:flex; flex-direction:column; gap:18px; }
+
+/* Form rows + labels */
+.formRow{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+  align-items:start;
+  gap:12px;
+  margin-bottom:12px;
+}
+.label{ font-weight:800; color:#4e3837; padding-top:10px; }
+
+/* Word input with dice */
+.wordWrap{ position:relative; }
+.wordInput{
+  width:100%;
+  height:44px;
+  border:2px solid #d9ebb8;
+  border-radius:12px;
+  background:#f7fff1;
+  padding:0 48px 0 14px;
+  font-size:15.5px;
+}
+.wordInput:focus{
+  border-color:#a7d98b;
+  outline:2px solid #a7d98b;
+  outline-offset:2px;
+  background:#fff;
+}
+.diceBtn{
+  position:absolute;
+  right:6px; top:50%;
+  transform:translateY(-50%);
+  width:50px; height:50px;
+  border-radius:12px;
+  border:2px solid #dfead1;
+  background:#f6fff0;
+  display:grid; place-items:center;
+  cursor:pointer;
+}
+.diceBtn img{ width:30px; height:30px; }
+
+/* Description */
+.descWrap{ position:relative; }
+.desc{
+  width:100%;
+  min-height:120px;
+  resize:vertical;
+  border:2px solid #d9ebb8;
+  border-radius:12px;
+  background:#f7fff1;
+  padding:12px 14px;
+  font-size:15px;
+  line-height:1.5;
+}
+.desc:focus{
+  border-color:#a7d98b;
+  outline:2px solid #a7d98b;
+  outline-offset:2px;
+  background:#fff;
+}
+.counter{ position:absolute; right:12px; bottom:-20px; font-size:12px; color:#6b7a6b; }
+
+/* Upload row */
+.actionsRow{ display:flex; align-items:center; gap:12px; }
+.upIconWrap{ display:inline-grid; place-items:center; width:18px; height:18px; }
+.uploadBtn img{ width:18px !important; height:18px !important; object-fit:contain; display:block; }
+.uploadBtn{
+  display:inline-flex; align-items:center; gap:10px;
+  background:#ffe59b; border:2px solid #e9c760; border-radius:12px;
+  padding:10px 16px; font-weight:800; cursor:pointer; color:#553d12;
+}
+.viewInline{
+  background:#f4fff0; border:2px solid #cfe6be; border-radius:12px;
+  padding:10px 14px; font-weight:800; cursor:pointer; text-decoration:none; color:#2a6a43;
+}
+
+/* Right column blocks */
+.pointsBlock{
+  display:flex; align-items:center; gap:14px;
+  background:#f2ffe8; border:2px solid #d8edc3; border-radius:12px;
+  padding:12px;
+}
+.pointsLabel{ font-weight:800; color:#4e3837; }
+.stepper{ display:flex; align-items:center; gap:8px; }
+.stepBtn{
+  width:34px; height:34px; border-radius:8px;
+  border:2px solid #d8edc3; background:#fff; cursor:pointer;
+}
+.stepValue{
+  width:56px; height:34px; text-align:center;
+  border:2px solid #d8edc3; border-radius:8px; background:#fff; font-weight:800;
+}
+.diffBlock{
+  display:flex; flex-direction:column; gap:10px;
+  background:#f2ffe8; border:2px solid #d8edc3; border-radius:12px; padding:12px;
+}
+.diffTitle{ font-weight:800; color:#4e3837; }
+.radio{ display:flex; align-items:center; gap:8px; font-weight:700; }
+
+/* Footer buttons (reuse from earlier, but ensure present here) */
+.footerRow{
+  display:flex; justify-content:center; gap:14px; margin-top:16px;
+}
+.secondaryBtn{
+  background:#fff; border:2px solid #dfead1; border-radius:12px;
+  padding:10px 24px; font-weight:800; cursor:pointer; box-shadow:var(--soft);
+}
+.saveBtn{
+  background:#ffd778; border:2px solid #e8c45e; border-radius:12px;
+  padding:10px 26px; font-weight:900; cursor:pointer; box-shadow:var(--soft);
+}
+
+/* header v2 */
+.header{
+  background:var(--green-700);
+  color:#fff;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 28px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.logo{  height:60px; }
+
+/* user dropdown (support both class name variants from earlier code) */
+.userWrap, .userDropdown{ position:relative; display:flex; align-items:center; }
+.userBtn, .userToggle{
+  display:flex; align-items:center; gap:12px;
+  background:none; border:none; color:#fff;
+  font-weight:600; font-size:18px; cursor:pointer;
+}
+.welcome, .welcomeText{ white-space:nowrap; }
+.userPic, .userIcon{ width:36px; height:36px; border-radius:50%; object-fit:cover; }
+
+/* dropdown panel */
+.menu, .dropdownCustom{
+  position:absolute; right:0; top:calc(100% + 8px);
+  background:#fff; color:#333; border-radius:10px; box-shadow:var(--shadow);
+  min-width:180px; overflow:hidden; z-index:10;
+}
+.menuItem, .dropdownItem{
+  width:100%; padding:10px 14px; background:none; border:none; text-align:left;
+  font-weight:500; cursor:pointer; font-size:16px;
+}
+.menuItem:hover, .dropdownItem:hover{ background:#f2f4f2; }
+/* Responsive */
+@media (max-width: 980px){
+  .editGrid{ grid-template-columns: 1fr; }
+  .formRow{ grid-template-columns: 130px 1fr; }
+}
+
+.customloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.customloader::before,
+.customloader::after,
+.customloader div {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ffc107; /* yellow theme */
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.customloader div {
+  animation-delay: 0.2s;
+}
+
+.customloader::after {
+  animation-delay: 0.4s;
+}
+
+
+

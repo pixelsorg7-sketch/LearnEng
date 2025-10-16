@@ -1,0 +1,603 @@
+.secondGameContainer {
+  background-image: url('../assets/bgpuzzle.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  background-color: #3a6838;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.learnengLogo {
+  width: 150px;
+  height: 60px;
+  background-image: url('../assets/LearnENGWG.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcomeSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.welcomeText {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.profileIcon {
+  font-size: 24px;
+  color: white;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 30px 10px;
+}
+
+.setNameLabel {
+  color: #444;
+  font-weight: bold;
+}
+
+.backButton {
+  position: fixed;
+  padding: 10px 25px;
+  background-color: #60a05f;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #ebf094;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.formBox {
+  background-color: #e0ffcacc;
+  border: 3px solid #4c8158;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 900px;
+   margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnModifycon{
+  display: flex;
+  column-gap: 20px;
+}
+
+
+.formHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formContentGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.leftColumnInputs {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phraseHeaders {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.matchRow {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+.optionInput,
+.setNameInput,
+.phraseInput,
+.matchInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-color: #ebf094;
+    flex: none;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.rightColumnOptions {
+    flex: 1.2;
+    min-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(224, 255, 202, 0); 
+    padding: 40px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    
+}
+
+.matchOptionsHeader {
+      font-size: 20px;
+  color: #444;
+  font-weight: bold;
+  /* border: 1px solid black; */
+  padding: 30px;
+  display: flex;
+  align-items: center;   /* vertically center */
+  justify-content: flex-start; /* keep in row */
+  gap: 10px;             /* space between items */
+  width: fit-content;    /* shrink box to content */
+    /* border: 1px solid black; */
+}
+
+.optionRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.optionRadio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #ebf094;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.optionRadio:checked {
+    background-color: #60a05f;
+    border-color: #3a6838;
+}
+
+.optionRadio:checked::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.optionInput:focus {
+    border-color: #4c8158;
+}
+
+
+.actionButtons {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  margin-top: 30px;
+    padding-bottom: 30px; 
+  /* ⬅️ adds space below */
+}
+
+.createbuttonq,
+.deleteButton {
+  background-color: #f9f188;
+  position: relative;
+  padding: 10px 25px;
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.saveButton {
+  padding: 10px 30px;
+  background-color: #f9f188;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.panelNav {
+  /* position: fixed;
+  top: 10%;
+  right: 14%;
+  transform: translateY(50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000; */
+
+  position: fixed;
+  top: 25%;
+  right: 15%;
+  transform: translateY(-10%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 00;
+  max-width: 280px;
+  min-width: 200px;
+
+   /* position: fixed;
+  top: 25%;
+  right: 15%;
+  transform: translateY(-10%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  max-width: 280px;
+  min-width: 200px; */
+  
+}
+
+.navDot {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 2px solid #3b6a41;
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, background .2s ease, color .2s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+    flex: 0 0 auto;         /* prevent shrinking in flex column */
+}
+.navDot:hover { transform: translateY(-1px); }
+.navDot.active {
+  background: #4c774c; /* match your theme */
+  color: #fff;
+  border-color: #4c774c;
+}
+.panelNavTitle {
+  border: 2px black solid;
+  border-radius: 20px;
+  background-color: #f9f188;
+  padding: 15px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.navdotCon{
+  border: 2px black solid;
+    border-color: #4c774c;
+   padding: 20px 16px;             /* ⬅️ top/bottom padding */
+  scrollbar-gutter: stable;       /* keeps space for scrollbar (no content under it) */
+  /* padding-top: 150px; */
+  /* justify-content: center; */
+  justify-content: flex-start; 
+  align-items: center;
+    row-gap: 12px;  
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #60a05f;
+   max-height: 400px;         /* adjust to your taste */
+  overflow-y: auto;
+}
+
+.AnswersCon{
+/* display: flex;
+ border: 1px black solid;
+width: 100%; */
+margin-top: 5%;
+}
+
+.AnswerLeftRow{
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+ /* border: 1px black solid; */
+  display: flex;
+}
+
+.optionPointInput{
+   padding: 10px;
+    font-size: 16px;
+    width: 90px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-color: #ebf094;
+    flex: none;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.Columndifficulty{
+  display: flex;
+  column-gap: 20px;
+}
+
+.difficultyHeaders{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 20px;
+    color: #444;
+    font-weight: bold;
+}
+
+.scoreButton{
+
+   background-color: #f9f188;
+  /* padding: 6px 5px; */
+  width: 40px;
+  border: 2px #4c774c solid;
+  align-items: center;
+  height: 40px;
+   z-index: 1;
+  position: relative;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+
+  
+
+}
+
+.QuestionOverflow{
+ max-height: 70vh;   /* takes up 70% of the viewport height */
+  min-height: 200px;  /* keeps it usable on small screens */
+  overflow-y: auto;   /* scrolls only if content overflows */
+  /* border: 1px solid black; */
+  padding: 1rem;      /* responsive spacing */
+  box-sizing: border-box; /* ensures padding is included in height */
+}
+
+/* header v2 */
+.header{
+  background:var(--green-700);
+  color:#fff;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 28px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.logo{  height:60px; }
+
+/* user dropdown (support both class name variants from earlier code) */
+.userWrap, .userDropdown{ position:relative; display:flex; align-items:center; }
+.userBtn, .userToggle{
+  display:flex; align-items:center; gap:12px;
+  background:none; border:none; color:#fff;
+  font-weight:600; font-size:18px; cursor:pointer;
+}
+.welcome, .welcomeText{ white-space:nowrap; }
+.userPic, .userIcon{ width:36px; height:36px; border-radius:50%; object-fit:cover; }
+
+/* dropdown panel */
+.menu, .dropdownCustom{
+  position:absolute; right:0; top:calc(100% + 8px);
+  background:#fff; color:#333; border-radius:10px; box-shadow:var(--shadow);
+  min-width:180px; overflow:hidden; z-index:10;
+}
+.menuItem, .dropdownItem{
+  width:100%; padding:10px 14px; background:none; border:none; text-align:left;
+  font-weight:500; cursor:pointer; font-size:16px;
+}
+.menuItem:hover, .dropdownItem:hover{ background:#f2f4f2; }
+
+/* Tablet - Keep same position, slightly smaller */
+@media (max-width: 1024px) {
+  .panelNav {
+    max-width: 240px;
+    min-width: 180px;
+    right: 1.5%;
+  }
+  
+  .panelNavTitle {
+    font-size: 17px;
+    padding: 12px;
+  }
+  
+  .navdotCon {
+    padding: 18px 14px;
+    max-height: 350px;
+  }
+  
+  .navDot {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Small tablet - Keep same position, smaller size */
+@media (max-width: 768px) {
+  .panelNav {
+    max-width: 200px;
+    min-width: 160px;
+    right: 1%;
+  }
+  
+  .panelNavTitle {
+    font-size: 15px;
+    padding: 10px;
+  }
+  
+  .navdotCon {
+    padding: 15px 12px;
+    row-gap: 10px;
+    max-height: 300px;
+  }
+  
+  .navDot {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile landscape - Keep same position, compact size */
+@media (max-width: 640px) {
+  .panelNav {
+    max-width: 160px;
+    min-width: 140px;
+    right: 0.5%;
+  }
+  
+  .panelNavTitle {
+    font-size: 13px;
+    padding: 8px;
+  }
+  
+  .navdotCon {
+    padding: 12px 10px;
+    row-gap: 8px;
+    max-height: 280px;
+  }
+  
+  .navDot {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile portrait - Keep same position, smallest size */
+@media (max-width: 480px) {
+  .panelNav {
+    max-width: 140px;
+    min-width: 120px;
+    right: 19%;
+    top: 60%;
+  }
+  
+  .panelNavTitle {
+    font-size: 12px;
+    padding: 6px;
+  }
+  
+  .navdotCon {
+    padding: 10px 8px;
+    row-gap: 6px;
+    max-height: 250px;
+  }
+  
+  .navDot {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+/* Very small screens - Keep same position, minimal size */
+@media (max-width: 360px) {
+  .panelNav {
+    max-width: 120px;
+    min-width: 100px;
+    right: 0.2%;
+    top: 10%;
+  }
+  
+  .panelNavTitle {
+    font-size: 11px;
+    padding: 5px;
+  }
+  
+  .navdotCon {
+    padding: 8px 6px;
+    row-gap: 5px;
+    max-height: 220px;
+  }
+  
+  .navDot {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+}
+
+ .customloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.customloader::before,
+.customloader::after,
+.customloader div {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ffc107; /* yellow theme */
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.customloader div {
+  animation-delay: 0.2s;
+}
+
+.customloader::after {
+  animation-delay: 0.4s;
+}

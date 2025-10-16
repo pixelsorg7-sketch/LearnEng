@@ -1,0 +1,325 @@
+.backgroundwrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+
+}
+
+.headerbar {
+  background-color: #4c774c;
+  border-radius: 12px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.usericon {
+  width: 45px;
+  margin-left: 10px;
+}
+
+.welcometext {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.backbuttonwrapper {
+  /* margin-bottom: 20px; */
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  column-gap: 24%;
+  position: relative;
+
+}
+
+.backbutton {
+  background-color: #4c774c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  position: relative;
+  border-radius: 30px;
+  font-size: 16px;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.backbutton:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.questionpanelcontainer {
+  /* background: rgba(255, 255, 255, 0.95); */
+  border-radius: 16px;
+  padding: 15px;
+  width: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.panelbox {
+   background-color: #e0ffcacc;
+  padding: 20px;
+  border-radius: 16px;
+border: 2px solid #3b6a41;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.textHeaders{
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.textfieldStandard{
+      padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-color: #ebf094;
+    flex: none;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.imagepreview {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+ column-gap: 20px;
+ /* border:1px solid black; */
+}
+.removepanelBtn{
+  height: 80px;
+  border-radius: 20px;
+}
+
+.uploadedimg {
+  max-width: 100%;
+  max-height: 130px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.removebtn {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+   position: relative;
+  z-index: 10;
+  background-color: #60a05f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.aibtn{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+   position: relative;
+  z-index: 10;
+  background-color: #60a05f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.modifybtncon{
+  display: flex;
+  column-gap: 20px;
+  padding: 10px;
+}
+
+.QuestionOverflow{
+ max-height: 70vh;   /* takes up 70% of the viewport height */
+  min-height: 200px;  /* keeps it usable on small screens */
+  overflow-y: auto;   /* scrolls only if content overflows */
+  /* border: 1px solid black; */
+  padding: 1rem;      /* responsive spacing */
+  box-sizing: border-box; /* ensures padding is included in height */
+}
+
+.titleConCenter{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+.backbtnWrapper{
+  display: flex;
+  /* border: 1px solid black; */
+  align-items: center;
+  align-content: center;
+  column-gap: 46%;
+  /* padding-bottom: 5px; */
+  /* justify-content: center; */
+}
+.titlePanelcon{
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f188;
+  border: 2px solid #60a05f;
+}
+
+.panelNav {
+  position: fixed;
+  top: 10%;
+  right: 7%;
+  transform: translateY(50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+
+.navDot {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 2px solid #3b6a41;
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, background .2s ease, color .2s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+    flex: 0 0 auto;         /* prevent shrinking in flex column */
+}
+.navDot:hover { transform: translateY(-1px); }
+.navDot.active {
+  background: #4c774c; /* match your theme */
+  color: #fff;
+  border-color: #4c774c;
+}
+.panelNavTitle {
+  border: 2px black solid;
+  border-radius: 20px;
+  background-color: #f9f188;
+  padding: 15px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.navdotCon{
+  border: 2px black solid;
+    border-color: #4c774c;
+   padding: 20px 16px;             /* ⬅️ top/bottom padding */
+  scrollbar-gutter: stable;       /* keeps space for scrollbar (no content under it) */
+  /* padding-top: 150px; */
+  justify-content: center;
+  align-items: center;
+    row-gap: 12px;  
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #60a05f;
+   max-height: 400px;         /* adjust to your taste */
+  overflow-y: auto;
+}
+
+/* header v2 */
+.header{
+  background:var(--green-700);
+  color:#fff;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 28px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.logo{  height:60px;}
+
+/* user dropdown (support both class name variants from earlier code) */
+.userWrap, .userDropdown{ position:relative; display:flex; align-items:center; }
+.userBtn, .userToggle{
+  display:flex; align-items:center; gap:12px;
+  background:none; border:none; color:#fff;
+  font-weight:600; font-size:18px; cursor:pointer;
+}
+.welcome, .welcomeText{ white-space:nowrap; }
+.userPic, .userIcon{ width:36px; height:36px; border-radius:50%; object-fit:cover; }
+
+/* dropdown panel */
+.menu, .dropdownCustom{
+  position:absolute; right:0; top:calc(100% + 8px);
+  background:#fff; color:#333; border-radius:10px; box-shadow:var(--shadow);
+  min-width:180px; overflow:hidden; z-index:10;
+}
+.menuItem, .dropdownItem{
+  width:100%; padding:10px 14px; background:none; border:none; text-align:left;
+  font-weight:500; cursor:pointer; font-size:16px;
+}
+.menuItem:hover, .dropdownItem:hover{ background:#f2f4f2; }
+
+.customloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.customloader::before,
+.customloader::after,
+.customloader div {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ffc107; /* yellow theme */
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.customloader div {
+  animation-delay: 0.2s;
+}
+
+.customloader::after {
+  animation-delay: 0.4s;
+}
+
+
+@media (max-width: 1168px) {
+
+  .modifybtncon{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .question-panel-container {
+    padding: 20px 15px;
+  }
+
+  .headerbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .backbutton {
+    width: 100%;
+    text-align: center;
+  }
+
+}
