@@ -43,7 +43,6 @@ const Signup=()=>{
 
      //useState hold Authetication 
     const {AuthCode,setAuthCode}=useContext(MyContext);
-    const {isFullAuth,setisFullAuth}=useContext(MyContext);
 
     //terms and conditions modal
 
